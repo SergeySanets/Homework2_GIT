@@ -1,0 +1,88 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+
+git branch Postman
+git branch Jmeter
+git branch CheckLists
+git branch BagReports
+git branch SQL
+git branch Charles
+git branch MobileTesting
+
+
+2. Запушить все ветки на внешний репозиторий
+
+git push -u origin --all
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+
+nano structbagrep.txt
+
+ID number	#123
+Name	CART - Unable to add new item to my cart
+Reporter	Mike A     
+Submit Date	03/04/2016
+Summary When my cart contains one item, I am unable to add a second item via the add to cart button on a product page
+
+URL	www.example.com/product/abc
+Screenshot	www.example.com/screenshot123
+Platform	Macintosh
+Operating System	OS X 10.12.0
+Browser	Chrome 53
+Severity	Major
+Assigned to	/
+Priority	High
+
+
+4. Запушить структуру багрепорта на внешний репозиторий
+
+ git add structbagrep.txt
+ git commit -m "barrepcomm"
+ git push
+
+
+5. Вмержить ветку Bag Reports в Main
+
+ git checkout main
+ git merge BagReports
+
+
+6. Запушить main на внешний репозиторий.
+
+ git push -u origin
+
+7. В ветке CheckLists набросать структуру чек листа.
+
+git checkout CheckLists
+nano checklist.txt
+
+Quality Assurance Checklist				
+Date:		
+Prepared By:		
+			
+QA Checklist		YES, NO, N/A	Comments
+		
+		
+
+8. Запушить структуру на внешний репозиторий
+
+ git add checklist.txt
+ git commit -m "checklistcomm"
+ git push
+
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+
+...
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+
+
+git pull
